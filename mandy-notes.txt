@@ -101,3 +101,26 @@ git checkout master
 
 git log --all
 	shows all changes
+
+==== Section 4: social git = git + syncing ====
+
+git clone
+	downloads the repo from an online git platform
+
+git push
+	push changes to online server
+
+==== Branches ====
+
+git branch
+	list branches in repo
+
+git branch [branch-name]
+	creates new branch with name [branch-name] from current branch
+	without doing anything in new branch, they are considered the same
+
+git diff [source branch name] [destination branch name]
+	shows you what will be lost/ changed if you move from source to dest
+
+git checkout [branch-name]
+	switch to an existing branch [branch-name]
