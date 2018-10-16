@@ -21,6 +21,9 @@ pwd
 ctrl+l
 	clears screen
 
+rm *.extension
+	removes everythinggggg
+
 ==== Section 2: Basic Git ====
 
 git init
@@ -45,6 +48,13 @@ git add [filename.extension]
 	files moves from cardboard to wooden box
 
 git add *.extension == git add .
+	adds everything in directory
+
+git add a*
+	adds everything that starts with a
+
+git add *i*
+	adds everything that contains i
 
 git reset HEAD
 	undoes the latest? change
@@ -77,3 +87,17 @@ Basic git workflow:
 1. Change
 2. Stage (Add)
 3. Finalse (Commit)
+
+==== Section 3: Time travelling and multiverse ====
+
+git checkout [commit-id]
+	- switches workspace to the version at that commit-id
+	- even if you enter the commit-id of the master, git will not show master.
+	It's just paranoid xD
+
+git checkout master
+	goes directly to most recent commit
+	when you do this, git will prompt to ask if you want to discard changes you made "in the past", if any
+
+git log --all
+	shows all changes
