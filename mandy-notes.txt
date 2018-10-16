@@ -44,6 +44,11 @@ git add [filename.extension]
 	tells git to start tracking a file
 	files moves from cardboard to wooden box
 
+git add *.extension == git add .
+
+git reset HEAD
+	undoes the latest? change
+
 git commit -m "message"
 	commit changes to the repository (all files that are green)
 	moves stuff from wooden box to metal box :D
@@ -59,3 +64,16 @@ git log
 git log --oneline
 	shows history on one line
 
+==== Git Summary ====
+
+Commit:
+	(v) finalise changes in repo
+	(n) the final change in the repo
+
+add and commit to be done separately for reasons
+
+Basic git workflow:
+
+1. Change
+2. Stage (Add)
+3. Finalse (Commit)
