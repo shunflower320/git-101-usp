@@ -1,0 +1,28 @@
+==== Section 1: Command Line ====
+
+mkdir [directory-name]
+	make new folder with name [directory-name]
+
+ls
+	displays a list of files and folders in the current folder
+
+cd [directory-name]
+	go into [directory-name]
+
+touch [file.extension]
+	creates a new file with name [file.extension]
+
+cat [filename]
+	displays contents of the file
+
+pwd
+	displays the current working directory
+
+git config --global user.name, user.email, add colour etc
+	do it once for every device
+
+git add [filename.extension]
+	files moves from cardbox to wooden box
+
+git commit
+	moves stuff from wooden box to safe :D
