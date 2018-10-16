@@ -18,11 +18,33 @@ cat [filename]
 pwd
 	displays the current working directory
 
+ctrl+l
+	clears screen
+
+==== Section 2: Basic Git ====
+
+git init
+	first step in every project
+
+git status
+	tells us the status of our working directory
+	compares wooden and cardboard box
+		difference will be in red
+			- doesnt just track files, also changes in the files
+			- this means if you made changes to a file when the file is not in the wooden box, there is discrepancy between
+			the version of this in cardboard box, and the current version.
+			- in this case, you need to add the file again.
+	compares cardboard and metal box
+		difference will be in green
+
 git config --global user.name, user.email, add colour etc
 	do it once for every device
 
 git add [filename.extension]
-	files moves from cardbox to wooden box
+	tells git to start tracking a file
+	files moves from cardboard to wooden box
 
-git commit
+git commit -m "message"
+	commit changes to the repository (all files that are green)
 	moves stuff from wooden box to safe :D
+	message tells you (and perhaps git) why you are doing this/ what you are doing
