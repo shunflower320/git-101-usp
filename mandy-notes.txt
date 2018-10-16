@@ -46,5 +46,16 @@ git add [filename.extension]
 
 git commit -m "message"
 	commit changes to the repository (all files that are green)
-	moves stuff from wooden box to safe :D
+	moves stuff from wooden box to metal box :D
 	message tells you (and perhaps git) why you are doing this/ what you are doing
+
+git diff
+	shows changes between working directories
+	staging area(wooden box) and repo(metal box)
+
+git log
+	shows history of changes/ commits
+
+git log --oneline
+	shows history on one line
+
