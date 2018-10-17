@@ -148,3 +148,8 @@ git revert [commit]
 	this new commit can be pushed to be shared with others working on remote branches
 		1 checkout remote branch
 		2 revert remote branch
+
+==== Cherry-pick ====
+
+git cherry-pick <commit 1> <commit 2> ...
+	copies the stated series of commits under HEAD
