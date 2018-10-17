@@ -56,9 +56,6 @@ git add a*
 git add *i*
 	adds everything that contains i
 
-git reset HEAD
-	undoes the latest? change
-
 git commit -m "message"
 	commit changes to the repository (all files that are green)
 	moves stuff from wooden box to metal box :D
@@ -128,6 +125,7 @@ git diff [source branch name] [destination branch name]
 git checkout [branch-name]
 	switch to an existing branch [branch-name] (that branch then becomes HEAD)
 
+==== Section 5: try.github.io ====
 git checkout [branch-name^]
 	the caret refers git to the parent of the commit of [branch-name]
 
@@ -139,3 +137,14 @@ git checkout HEAD^
 git checkout ~<number>
 	<number> is optional
 		if specified, git directly move <number> levels up in the commit tree
+
+git reset [commit reference]
+	moves HEAD to specified commit reference
+		- commit reference could be commit hash (the long string of letters n numbers)
+		or could be sth like HEAD~1, which would mean moving HEAD to parent of HEAD
+
+git revert [commit]
+	creates a new commit with the changes being undoing commits of HEAD	
+	this new commit can be pushed to be shared with others working on remote branches
+		1 checkout remote branch
+		2 revert remote branch
