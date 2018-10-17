@@ -119,11 +119,23 @@ git branch [branch-name]
 	creates new branch with name [branch-name] from current branch
 	without doing anything in new branch, they are considered the same
 
+git branch -f [branch-name] [commit-name]
+	forces a branch of [branch-name] to be assigned to commit of [commit-name]
+
 git diff [source branch name] [destination branch name]
 	shows you what will be lost/ changed if you move from source to dest
 
 git checkout [branch-name]
-	switch to an existing branch [branch-name]
+	switch to an existing branch [branch-name] (that branch then becomes HEAD)
 
 git checkout [branch-name^]
 	the caret refers git to the parent of the commit of [branch-name]
+
+git checkout HEAD^
+	goes back in time to the parent of HEAD, which will subsequently become the HEAD
+	need not specify name of HEAD
+	by default HEAD is the current directory u are at
+
+git checkout ~<number>
+	<number> is optional
+		if specified, git directly move <number> levels up in the commit tree
