@@ -124,3 +124,6 @@ git diff [source branch name] [destination branch name]
 
 git checkout [branch-name]
 	switch to an existing branch [branch-name]
+
+git checkout [branch-name^]
+	the caret refers git to the parent of the commit of [branch-name]
