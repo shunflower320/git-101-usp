@@ -161,3 +161,4 @@ git rebase -i [commit reference]
 		ie all the commits that will be copied are after this one, and will be copied to below this
 		this one cannot be skipped
 	- will open a UI window for you to reorder or omit commits from the commits below the specified commit
+
